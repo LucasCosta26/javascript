@@ -15,14 +15,14 @@
 </head>
 <body>
     <h1>Olá, mundo.</h1>
-    <p>Mas o que é isso!</p>
+    <p id="nome"></p>
     <script>
         // serve para colocar comentários de uma linha no seu código
         /* serve para colocar comentários com mais de uma linha. Comentários te ajuda a entender o que você quis fazer com o código e para o que ele serve. Aproveite e seja bom em alguma coisa */
        window.alert("Minha primeira mensagem")
        window.confirm("Está gostando?")
-       window.prompt("Qual o seu nome?")
-
+        var no = window.prompt("Qual o seu nome?")
+        document.getElementById('nome').innerHTML= `Prazer ${no}, seja bem vindo!`
 </script>
 </body>
 </html>
